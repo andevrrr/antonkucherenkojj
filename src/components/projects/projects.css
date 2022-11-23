@@ -1,0 +1,130 @@
+.background {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+.projects{
+margin-top: 3%;
+}
+
+.color {
+    background-color: white;
+    padding: 10% 0% 10% 0%;
+}
+
+.color  p, h3, small{
+    color: black;
+}
+
+.forecast_project {
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 0px 50px 60px rgb(0 0 0 / 10%);
+    position: relative;
+    padding: 5%;
+    margin-right: 10%;
+}
+
+.forecast_project small{
+    color: black;
+    display: block;
+    position: relative;
+    margin-bottom: 8px;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.forecast_project h3{
+    position: relative;
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+    line-height: 30px;
+    color: #ff6651;
+}
+
+
+/* Photos */
+
+.data {
+    position: absolute;
+    top: -51px;
+    right: -62px;
+    width: 260px;
+    min-height: 160px;
+}
+
+.graph{
+    position: absolute;
+    top: 60px;
+    right: -62px;
+    width: 209px;
+    min-height: 116px;
+}
+
+.main_page {
+    position: absolute;
+    top: -45px;
+    right: -113px;
+    width: 200px;
+    min-height: 100px;
+}
+
+.weather{
+    position: absolute;
+    top: -51px;
+    right: -62px;
+    width: 260px;
+    min-height: 160px;
+}
+
+.text {
+    padding: 5%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.text p {
+    margin-top: 10%;
+    font-weight: 200;
+}
+
+.description h4, .description li {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.description h4, .description a{
+    color: #ff6651;
+    margin-top: 5%;
+}
+
+.description p {
+    position: relative;
+}
+
+
+@media screen and (max-width: 800px) {
+    
+    .background{
+        display: block;
+        text-align: left;
+    }
+    .forecast_project{
+        margin-top: 10%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    
+    .data{
+        right: 80px;
+    }
+    .graph{
+        right: 50px;
+    }
+    .main_page{
+        right: 22px;
+    }
+}
+

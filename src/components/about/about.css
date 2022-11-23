@@ -1,0 +1,223 @@
+/* about me part */
+
+.about{
+    height: 65%;
+}
+
+.about_container {
+    margin-top: 5%;
+}
+
+.about_me {
+    display: flex;
+    margin-top: 5%;
+}
+
+.text_about_me {
+    margin: 3%;
+}
+/* terminal_window */
+
+.terminal {
+    background-color: rgb(19, 20, 27);
+    box-shadow: 0px 0px 8px 5px #13121a62;
+    height: 450px;
+    width: 70%;
+    border-radius: 10px;
+    border: 0.1mm ridge rgb(107, 99, 99);
+    position: absolute;
+    left: 10%;
+}
+
+.terminal_ {
+    height: 100%;
+    width: 100%;
+    box-shadow: inset 0px 0px 16px 1px #2c2c2c7a;
+    border-radius: 10px;
+}
+
+.terminal_top_bar{
+    background-color: rgb(39, 39, 39);
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: inset 0px 0px 16px 1px #2c2c2c7a;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: move;
+}
+
+.terminal_buttons {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-left: 5px;
+    box-shadow: 1.5px 1.5px 5px #2c2c2c;
+}
+
+.ter_buns {
+    width: 12px;
+    height: 12px;
+    opacity: 0;
+}
+
+.ter_buns:hover{
+    opacity: 0.5;
+}
+
+.dot {
+    border-radius: 50%;
+}
+
+.dot_background {
+    background-color: rgba(238, 93, 93, 0.863);
+
+}
+
+.dash {
+
+    border-radius: 50%;
+}
+
+.dash_background {
+    background-color: rgba(240, 209, 34, 0.863);
+}
+
+.fullscreen {
+
+    border-radius: 50%;
+}
+
+.fullscreen_background {
+    background-color: rgba(85, 241, 85, 0.87);
+}
+
+.folder {
+    margin-left: 15px;
+    width: 15px;
+    height: 15px;
+}
+
+.terminal_top_bar_text {
+    margin-left: 6px;
+    text-shadow: 1px 1px 10px #2c2c2c;
+    font-size: 13px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.terminal-text p {
+    margin-left: 1%;
+    text-align: left;
+    font-size: 13px;
+    font-family: 'Sono', sans-serif;
+}
+
+/* Photo of me in a window */
+
+.my_photo {
+    position: absolute;
+    background-color: gray;
+    box-shadow: 0px 0px 8px 5px #13121a62;
+    width: 40%;
+    border-radius: 10px;
+    border: 0.1mm ridge rgb(107, 99, 99);
+    right: 5%;
+    top: 50%;
+}
+
+
+.my_photo_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5%;
+    cursor: move;
+}
+
+.my_photo_header div {
+    display: flex;
+    align-items: center;
+}
+.my_photo_header_icons{
+    margin-right: 15px;
+}
+
+.icon-back {
+    width: 25px;
+    height: 25px;
+    border-radius: 20%;
+    margin-left: 1.5%;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.icon-back:hover {
+    background-color: rgba(107, 107, 107, 0.267);
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+
+.photo_of_me {
+    width: 60%;
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+    .terminal{
+        height: 100%; 
+        position: relative; 
+        left: 0; 
+        width: 100%;
+    }
+
+    .my_photo{
+        position: relative;
+        right: 0;
+        top: 0;
+        width: 500px;
+    }
+
+    .about{
+        text-align: center;
+        width: var(--container-width-lg);
+        margin: 0 auto;
+        margin-top: 2%;
+        height: 100%;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .terminal{
+        height: 100%; 
+        position: relative; 
+        left: 0; 
+        width: 100%;
+    }
+
+    .my_photo{
+        position: relative;
+        right: 0;
+        top: 0;
+        width: 100%;
+    }
+
+    .about{
+        text-align: center;
+        width: var(--container-width-lg);
+        margin: 0 auto;
+        margin-top: 2%;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .icon {
+        opacity: 0;
+    }
+}

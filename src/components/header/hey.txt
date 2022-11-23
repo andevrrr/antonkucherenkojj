@@ -1,0 +1,47 @@
+const tab2 = document.querySelector(".move2"),
+    topbar2 = tab2.querySelector(".moving_header2");
+    function onDrag({movementX, movementY}){
+      let getStyle = window.getComputedStyle(tab2);
+      let leftVal = parseInt(getStyle.left);
+      let topVal = parseInt(getStyle.top);
+      tab2.style.left = `${leftVal + movementX}px`;
+      tab2.style.top = `${topVal + movementY}px`;
+    }
+    topbar2.addEventListener("mousedown", ()=>{
+      topbar2.classList.add("active");
+      topbar.addEventListener("mousemove", onDrag);
+    });
+    document.addEventListener("mouseup", ()=>{
+      topbar2.classList.remove("active");
+      topbar2.removeEventListener("mousemove", onDrag);
+});
+
+
+
+
+
+<div className="my_photo" style={this.state.styles}  onMouseDown={this._dragStart} onMouseMove={this._dragging} onMouseUp={this._dragEnd}>
+            <div>
+              <div  className="terminal_top_bar my_photo_header" >
+                  <div>
+                    <button className='terminal_buttons dot_background'><img className='ter_buns dot' src={require("../../assets/icons8-multiply-50.png")} alt="" /></button>
+                    <button className='terminal_buttons dash_background'><img className='ter_buns dash' src={require("../../assets/icons8-minus-67.png")} alt="" /></button>
+                    <button className='terminal_buttons fullscreen_background'><img className='ter_buns fullscreen' src={require("../../assets/icons8-arrows-64.png")} alt="" /></button>
+                    <img className='folder' src={require("../../assets/icons8-folder-80.png")} alt="" />
+                    <p className='terminal_top_bar_text' >photo.jpg </p>
+                  </div>
+                  <div className='my_photo_header_icons'>
+                      <button className='icon-back'><img className='icon' src={require("../../assets/icons_photo/information.png")} alt="" /></button>
+                      <button className='icon-back'><img className='icon' src={require("../../assets/icons_photo/zoom-out.png")} alt="" /></button>
+                      <button className='icon-back'><img className='icon' src={require("../../assets/icons_photo/zoom-in.png")} alt="" /></button>
+                      <button className='icon-back'><img className='icon' src={require("../../assets/icons_photo/share.png")} alt="" /></button>
+                      <button className='icon-back'><img className='icon' src={require("../../assets/icons_photo/highlighter.png")} alt="" /></button>
+                      <button className='icon-back'><img className='icon' src={require("../../assets/icons_photo/rotate.png")} alt="" /></button>
+                      <button className='icon-back'><img className='icon' src={require("../../assets/icons_photo/search.png")} alt="" /></button>
+                    </div>
+               </div>
+               <div>
+                <img className='photo_of_me' src={require("../../assets/photo.jpg")} alt="" />
+               </div>
+            </div>
+          </div>
